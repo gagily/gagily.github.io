@@ -150,6 +150,7 @@ p {
 }
 
 .social-icons {
+  width: 100vh;
   padding-top: 20px;
 }
 

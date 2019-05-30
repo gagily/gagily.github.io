@@ -3,9 +3,14 @@ import React from 'react'
 class TodoItems extends React.Component {
 	createTasks = item => {
     return (
-      <li key={item.key} onClick={() => this.props.deleteItem(item.key)}>
-        {item.text}
-      </li>
+    	<div>
+		    <li key={item.key}>
+		        {item.text}
+		    </li>
+		    <button className="deleteButton" onClick={() => this.props.deleteItem(item.key)}>
+		    	<i class="fas fa-trash-alt"></i>
+		    </button>
+      	</div>
     )
   }
 	

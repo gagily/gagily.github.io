@@ -12,8 +12,9 @@ class App extends React.Component {
 			currentItem: {
 				text:'',
 				key:''
-			}
+			},
 		}
+
 	}
 
 	handleInput = e => {
@@ -29,7 +30,6 @@ class App extends React.Component {
 		e.preventDefault()
 		const newItem = this.state.currentItem
 		if (newItem.text !== '') {
-			console.log(newItem)
 			const items= [...this.state.items, newItem]
 			this.setState({
 				items: items,
@@ -47,12 +47,14 @@ class App extends React.Component {
 		})
 	}
 
+ 
+
   render() {
   	return (
   		<div className="App">
   			<h2 className="title">Todo app</h2>
   			<p className="title-text">Enter the task in the input box, click on add button to add to the list. 
-  			To remove from the list, click on the task to be removed.</p>
+  			To remove from the list, click on the button trash can to be removed.</p>
   			<TodoList 
   				addItem={this.addItem}
   				inputElement={this.inputElement}

@@ -194,14 +194,6 @@ img {
   padding-right: 2px;
 }
 
-.adress-link {
-  color: black;
-}
-
-.adress-link:hover {
-  color: black;
-  text-decoration: none;
-}
 
 .linkedin, .github {
   display: inline-block;
@@ -215,7 +207,6 @@ img {
   width: 100%;
   padding-left: 0px;
   text-align: center;
-  border: 2px solid #343a40;
 }
 
 #header .navbar-nav li > a {

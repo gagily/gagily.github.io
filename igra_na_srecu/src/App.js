@@ -81,7 +81,7 @@ class App extends React.Component {
   addBet(e) {
     e.preventDefault();
     const newBet = e.target.value;
-    if (/^\d+$/.test(newBet) && newBet<1000) {
+    if (/^\d+$/.test(newBet) && newBet<1001) {
       this.setState({
         constraint: false,
         bet: newBet

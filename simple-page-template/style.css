@@ -1,0 +1,377 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+.landing-section-inner {
+	padding: 40px;
+}
+
+h1 {
+	font-size: 20px;
+	color: white;
+}
+
+.right-side {
+	color: white;
+}
+
+.dropdown button {
+	color: white;
+}
+
+.green {
+	color: #33ff77;
+	font-weight: 900;
+}
+
+#one, #two {
+	cursor: pointer;
+}
+
+.form-control {
+	background-color: #b5a6a621 !important;
+	border-radius: .35rem !important;
+	border: none;
+}
+
+.center {
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 800;
+}
+
+.buttonSection .btn {
+	width: 100%;
+    padding: 10px;
+    border-radius: .50rem;
+    font-weight: bold;
+}
+
+.btn-greenback {
+	background-color: #33ff77;
+	color: white;
+}
+
+.landing-section {
+	background-image: url("img/backlground5.png");
+}
+
+#dropdownMenu2 {
+	background: none;
+	border: none;
+}
+
+#inputEmail, #inputLast, #inputFirst {
+ 	font-family: "Font Awesome 5 Free";
+}
+
+.modal-email #inputEmail {
+	margin-bottom: 0px;
+}
+
+.heightR {
+	height: 100%;
+}
+
+.heightR .btn{
+	height: 85%;
+	font-size: 14px;
+}
+
+.form-check-label {
+	padding-top: 5px;
+}
+
+.data-protected, .form-check {
+	padding: 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration-color: none;
+	text-decoration: none;
+}
+
+::placeholder {
+  color: #cccccc !important;
+}
+
+h3, .stepByStep {
+	display: inline-block;
+	color: #cccccc;
+}
+
+.stepByStep span, .divider {
+	display: inline-block;
+	color: #cccccc;
+}
+
+.divider {
+	font-weight: 100; 
+}
+
+.stepByStep {
+	float: right;
+	font-size: 1.70rem;
+}
+
+form {
+	color: #b3b3b3;
+	padding-top: 20px;
+}
+
+.more-info {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.more-info p{
+	font-size: 10px;
+	background: #000000a3;
+    padding: 10px;
+    border-radius: .35rem;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-img {
+	width: 100%;
+}
+
+.modal-footer h5 {
+	text-transform: uppercase;
+	font-size: 19px;
+    padding-top: 15px;
+}
+
+.modal-footer h5 .green {
+	font-size: 21px;
+}
+
+.modal-footer {
+	background: #1d1b1b;
+}
+
+#info-more {
+	display: none;
+}
+
+#more {
+	cursor: pointer;
+}
+
+.iti {
+	width: 100%;
+}
+
+#twophone {
+	display: none;
+}
+
+#secondbtn {
+	display: none;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	padding: 75px;
+}
+
+.title h4 {
+	font-size: 1.80rem;
+}
+
+.title p, .text-14 {
+	color: gray;
+    padding: 5px;
+}
+
+.register, .card-part, .expert-part {
+	text-align: center;
+	align-self: flex-end;
+}
+
+.placeholder36 {
+	background-image: url("img/placeholder36.png");
+	
+}
+
+.activeplaceholder {
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center;
+	padding: 25px;
+    border-radius: .35rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+
+.inactiveplaceholder {
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center;
+	padding: 25px;
+    border-radius: .35rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.placeholder34 {
+	background-image: url("img/placeholder34.png");	
+}
+
+.credit-card-placeholder {
+	background-image: url("img/placeholder32.png");
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.credit-card-placeholder-i {
+	background-image: url("img/placeholder30.png");
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.expert-placeholder {
+	background-image: url("img/placeholder28.png");
+	padding: 5px 30px;
+} 
+
+.expert-placeholder-i {
+	background-image: url("img/placeholder26.png");
+	padding: 5px 20px;
+}
+
+.active {
+	width: 100%;
+	text-align: center;
+}
+
+
+.inactive .numberTop {
+	color: gray;
+}
+
+.inactive {
+	display: none;
+}
+
+.numberTop, .register-2 {
+	font-size: 1.75rem;
+}
+
+.register-2 {
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.col-4 {
+	display: flex;
+	justify-content: center;
+}
+
+.button-start-now {
+	text-align: center;
+	padding: 90px;
+}
+
+.button-start-now button {
+	margin: 0 auto;
+	width: 270px;
+}
+
+.question {
+	display: inline-block;
+}
+
+.panel-title > a:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f146";
+    padding-right: 5px;
+    font-size: 30px;
+}
+
+.panel-title > a.collapsed:before {
+    float: left !important;
+    content:"\f0fe";
+    font-size: 30px;
+
+}
+
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+.panel-group {
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+}
+
+.faq-section {
+	padding: 100px;
+	background-color: #33ff77;
+}
+
+.faq-section .container {
+	padding-top: 80px;
+}
+
+h6 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 1.95rem;
+}
+
+.panel-title {
+	font-size: 25px;
+}
+
+.panel-title a {
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	padding-left: 25px;
+}
+
+.panel-body {
+	padding-left: 60px;
+	color:white;
+}
+
+.panel-default {
+	margin-bottom: 30px;
+}
+
+.footer-section {
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+.note {
+	padding: 30px;
+	font-size: 14px;
+}
+
+.links p {
+	display: inline-block;
+	letter-spacing: 1.5;
+}
+

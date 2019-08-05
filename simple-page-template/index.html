@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--JS -->
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+
+		<title>TOPSTOCKS</title>
+		
+
+	</head>
+	<body>
+		<!--modal video-->
+		<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/modalvideo.png" class="modal-img" />
+          </div>
+          <div class="modal-footer">
+            <form class="container">
+            	<div class="row">
+            		<div class="col-3">
+            			<h5>start making <br><span class="green">money today</span></h5>
+            		</div>
+            	<div class="col-6">
+								  <div class="form-row">
+								    <div class="form-group col-md-6">
+								      <input type="email" class="form-control fas" id="inputFirst" placeholder="&#xf007; First Name">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <input type="password" class="form-control fas" id="inputLast" placeholder="&#xf007; Last Name">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <input type="text" class="form-control fas modal-email" id="inputEmail" placeholder="&#xf0e0;                    E-mail">
+								  </div>
+							</div>
+							<div class="col-3">
+								  <div class="buttonSection center heightR">
+								  	<button type="submit" class="btn btn-greenback ">GO TO NEXT STEP <span class="black-arrow">></span></button>
+									</div>
+							</div>
+						</div>
+						</form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--end modal video-->
+
+		<div class="landing-section">
+			<div class="container">
+				<div class="navbar">
+					<h1 class="brand"><span class="green">TOP</span>STOCKS</h1>
+					<nav class="pull-right">
+						<div class="dropdown">
+						  <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						   <img src="img/flag.png"> ENGLISH
+						  </button>
+						</div>
+					</nav>
+				</div>
+				<!--end navbar -->
+				<div class="landing-section-inner">
+					<div class="container">
+						<div class="row">
+							<div class="col-7">
+								<h2>click <br><a href="#" data-toggle="modal" data-target="#project-1" class="green">here</a> to find out more</h2>
+							</div>
+							<div class="col-5 right-side">
+								<h3>JOIN US</h3>
+									<div class="stepByStep">
+										<span id="one">1</span>
+										<div class="divider">|</div>
+										<span id="two">2</span>
+									</div>
+								<form>
+								  <div class="form-row">
+								    <div class="form-group col-md-6">
+								      <input type="email" class="form-control fas" id="inputFirst" placeholder="&#xf007; First Name">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <input type="password" class="form-control fas" id="inputLast" placeholder="&#xf007; Last Name">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <input type="text" class="form-control fas" id="inputEmail" placeholder="&#xf0e0;                    E-mail">
+								  </div>
+								  <div class="form-group" id="twophone">
+								    <input type="tel" id="phone" class="form-control">
+								  </div>
+								  <div class="form-group center">
+								    <div class="form-check">
+								      <input class="form-check-input" type="checkbox" id="gridCheck">
+								      <label class="form-check-label" for="gridCheck">
+								      I have read, understand, and accept the <span class="green">privacy policy</span>
+								      </label>
+								    </div>
+								  </div>
+								  <div class="buttonSection center" id="firstbtn">
+								  	<button type="submit" class="btn btn-greenback">GO TO NEXT STEP</button>
+								  </div>
+								  <div class="buttonSection center" id="secondbtn">
+								  	<button type="submit" class="btn btn-greenback">GET STARTED NOW</button>
+								  </div>
+								  <div class="data-protected group center">
+	                    <p class="text-10"><i class="fas fa-lock"></i>  Your data is always protected with us.<br>You can change your mind anytime by...<br><span class="green" id="more">more</span></p>
+	                </div>
+	                <div class="more-info center" id="info-more" >
+	                	<p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam, quis<br>nostrud exercitation ullamco laboris nisi<br> ut aliquip ex ea commodo consequat. </p>
+	                </div>							
+                </form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end landing-section-inner-->
+			</div>
+			<!--end container-->
+		</div>
+
+		<div class="steps-section">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+					<h4 class="green">HOW TO INVEST</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<div class="row cards">
+					<div class="col-4">
+						<div class="register">
+            <div class="active" id="registerA">
+              <span class="numberTop green">1</span>
+              <div class="placeholder36 activeplaceholder">
+                <img class="leadbox-2" src="img/leadbox4.png" alt="" width="245" height="289">
+              </div>
+              <p class="register-2 green">REGISTER</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+            <div class="inactive" id="registerI">
+              <p class="numberTop">1</p>
+              <div class="placeholder34 inactiveplaceholder">
+                <img class="leadbox-2" src="img/leadbox4.png" alt="" width="245" height="289">
+              </div>
+              <p class="register-2 green">REGISTER</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+          </div>
+					</div>
+					<div class="col-4">
+						<div class="card-part">
+            <div class="inactive" id="credit-cardA">
+              <p class="numberTop">2</p>
+              <div class="credit-card-placeholder activeplaceholder">
+                <img class="credit-card" src="img/creditcard3.png" alt="" width="250" height="208">
+              </div>
+              <p class="register-2 green">FUND YOUR ACCOUNT</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+            <div class="active" id="credit-cardI" >
+              <p class="numberTop">2</p>
+              <div class="credit-card-placeholder-i inactiveplaceholder">
+                <img class="credit-card" src="img/creditcard3.png" alt="" width="250" height="208">
+              </div>
+              <p class="register-2 green">FUND YOUR ACCOUNT</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+          </div>
+					</div>
+					<div class="col-4">
+						<div class="expert-part">
+            <div class="inactive green" id="expertA">
+              <p class="numberTop green">3</p>
+              <div class="expert-placeholder">
+                <img class="expert" src="img/expert1.png" alt="" width="233" height="322">
+              </div>
+              <p class="register-2 green">EXPERT ADVICE!</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+            <div class="active" id="expertI" >
+              <p class="numberTop">3</p>
+              <div class="expert-placeholder-i inactiveplaceholder">
+                <img class="expert" src="img/expert1.png" alt="" width="233" height="322">
+              </div>
+              <p class="register-2 green">EXPERT ADVICE!</p>
+              <p class="text-14">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+            </div>
+          </div>
+					</div>
+				</div>
+				<div class="row button-start-now">
+					<button type="submit" class="btn btn-greenback">START NOW</button>
+				</div>
+			</div>
+		
+		</div>
+		<!--end steps-section-->
+
+		<div class="faq-section">	
+			<h6>frequently asked questions</h6>
+			<div class="container">
+				<div class="row">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingOne">
+				        <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      	</h4>
+
+				        </div>
+				        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				            <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.
+				            </div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingTwo">
+				             <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      </h4>
+
+				        </div>
+				        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingThree">
+				             <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      </h4>
+
+				        </div>
+				        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingFour">
+				             <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      </h4>
+
+				        </div>
+				        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingFive">
+				             <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      </h4>
+
+				        </div>
+				        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div class="panel-heading" role="tab" id="headingSix">
+				             <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				         Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				        </a>
+				      </h4>
+
+				        </div>
+				        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur.</div>
+				        </div>
+				    </div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!--end faq-section-->
+
+		<div class="footer-section">
+			<footer>
+				<h4><span class="green">TOP</span>STOCKS</h4>
+				<div class="note">
+            <p class="text-30"><strong class="fw700">Important Risk Note</strong>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat t non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunt r magni voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+        </div>
+        <div class="links group">
+            <p class="text-31">Risk Disclaimer</p>
+            <p class="text-32">·</p>
+            <p class="text-33">Privacy Policy</p>
+            <p class="text-34">·</p>
+            <p class="text-35">Website Agreement</p>
+            <p class="text-36">·</p>
+            <p class="text-37">Report Abuse</p>
+            <p class="text-38">·</p>
+            <p class="text-39">Contract Us</p>
+          </div>
+			</footer>
+		</div>
+
+		<script src="build/js/intlTelInput.js"></script>
+		<script>
+			var input = document.querySelector("#phone");
+			intlTelInput(input, {
+				utilsScript: "build/js/utils.js"
+			});
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,461 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dragana Zivkovic | Portfolio</title>
-  <meta charset='utf-8'>
-  <!-- Responsive meta tag -->
+	<title>Dragana Zivkovic | Portfolio</title>
+	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
   <!-- favicon -->
-  <link rel="icon" href="main-images/prof-img.jpg" type="image/gif" sizes="17x17">
+  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="17x17">
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  <script src="anim.js"></script>
+	<!-- bootstrap 4-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body data-spy="scroll" data-target="#navbar-scroll"> 
-  <!-- MODAL 1 -->
-  <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-1-label">Susur Chef Restaurant Group</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>This example is about chef Susur Lee and his story.</p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JQuery</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Design</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>GIMP</li>
-                </ul>
-                <p>Click on the <a href="susur/home.html" target="_blank">image</a> to see the page on the new tab.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="susur/home.html" target="_blank"><img src="main-images/homeSusur.png" alt="Susur"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+<body>
+	<header id="topSection">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+			<div class="container">
+			  <a class="navbar-brand" href="#">
+			  	<img class="logo"src="img/logo1.png">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarText">
+			  	<div class="mr-auto"></div>
+			    <ul class="navbar-nav ">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#portfolio">Portfolio</a>
+			      </li>
+			    </ul>
+			  </div>
+		  </div>
+		</nav>
+	</header>
+	
+	<main class="container">
+		<!-- about -->
+		<section class="about container shadow card">
+			<h2 id="about">ABOUT</h2>
+			<div class="row p-10">
+				<div class="col-lg-6">
+					<figure class="figure">
+					  <img src="img/prof-img.jpg" class="figure-img img-fluid rounded" alt="profile image">
+					</figure>
+				</div>
+				<div class="col-lg-6">
+					<p class="skills-desc">As a recent graduate, I am eager to build a long-term career in the ﬁeld of front end development. Below is a list of my current technical skills:</p>
+					<table class="table table-borderless skills-table">
+						<thead>
+							<tr>
+								<th scope="col">
+									<img src="img/logos/html.svg" class="small-icons" title="HTML5">
+								</th>
+								<th scope="col">
+									<img src="img/logos/css3.svg" class="small-icons" title="CSS3">
+								</th>
+								<th scope="col">
+									<img src="img/logos/js.svg" class="small-icons" title="JavaScript">
+								</th>
+						</thead>
+					<tbody>
+						<tr>
+							<th scope="row">
+								<img src="img/logos/jquery.svg" class="small-icons" title="jQuery">
+							</th>
+							<td>
+								<img src="img/logos/react.svg" class="small-icons" title="React">
+							</td>
+							<td>
+								<img src="img/logos/bootstrap.svg" class="small-icons" title="Bootstrap">
+							</td>
 
-  <!-- MODAL 2 -->
-  <div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-2-label">Pub Majmunac</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>This example is about pub located in Sremska Mitrovica.</p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JQuery</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JavaScript</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Bootstrap</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Desing</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>GIMP</li>
-                </ul>
-                <p>Click on the <a href="pub/home.html" target="_blank">image</a> to see the page on the new tab.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="pub/home.html" target="_blank"><img src="main-images/salto.jpg" alt="Pub Majmunac"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+						</tr>
+						<tr>
+							<th scope="row">
+								<img src="img/logos/mysql.svg" class="small-icons" title="MySQL">
+							</th>
+							<td>
+								<img src="img/logos/linux.png" class="small-icons" title="Linux">
+							</td>
+							
+							<td><img src="img/logos/github.svg" class="small-icons" title="GitHub"></td>
+						</tr>
+						</tbody>
+					</table>		
+			</div>
 
-  <!-- MODAL 3 -->
-  <div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-3-label">Intersection Advertising Agency</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>This example is about an advertising agency.</p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JQuery</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JavaScript</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Bootstrap</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Desing</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>GIMP</li>
-                </ul>
-                <p>Click on the <a href="agency/home.html" target="_blank">image</a> to see the page on the new tab.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="agency/home.html" target="_blank"><img src="main-images/agency.png" alt="Advertising Agency"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+		</section>
 
-  <!-- MODAL 4 -->
-  <div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-4-label">Todo list app</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>This is simple CRUD app in React. Enter the task in the input box, click on button "Add Task" to add to the list. 
-  			To remove from the list, click on the button trash can to be removed.</p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JavaScript</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>ReactJS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Desing</li>
-                </ul>
-                <p>Click on the <a href="https://simple-crud-to-do.herokuapp.com/" target="_blank">image</a> to see the code of app on the Heroku.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="https://simple-crud-to-do.herokuapp.com/" target="_blank"><img src="main-images/todo.png" alt="Todo list app"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+		<!-- portfolio -->
+		<section class="projects container shadow card">
+			<h2 id="portfolio">PORTFOLIO</h2>
+			<p class="headlineP">Below you can see some projects I've been working on lately. Click on the image title to see the projects.</p>
 
-  <!-- MODAL 5 -->
-  <div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-5-label">Random quote machine</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>React app with data from an API. When you click on button with title "new quote", app get quote and author data and then generates on screen. </p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JavaScript</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>ReactJS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Desing</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>API for quotes</li>
-                </ul>
-                <p>Click on the <a href="https://random-quote-machine-react-app.herokuapp.com/" target="_blank">image</a> to see the code of app on the Heroku.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="https://random-quote-machine-react-app.herokuapp.com/" target="_blank"><img src="main-images/quotei.png" alt="Random quote app"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+			<!-- first row -->
+			<div class="row p-10">
+				<div class="col-md-6">
+					<div class="hovereffect">
+			      <img class="img-responsive rounded" src="img/quote.jpeg" alt="Motivation quote">
+			      <div class="overlay">
+			        <h3>Random quote machine</h3>
+			        <a class="info" href="https://random-quote-machine-react-app.herokuapp.com/" target="_blank">React app with data from an API. Click here.</a>
+			      </div>
+			    </div>
+				</div>
+				
+				<div class="col-md-6 pd-top">
+					<div class="hovereffect">
+				    <img class="img-responsive rounded" src="img/balls.png" alt="Colorfull balls">
+				    <div class="overlay">
+				      <h3>Lucky balls game</h3>
+				      <a class="info" href="https://lucky-draw-ball.herokuapp.com/" target="_blank">Game simillar to "Lucky six". Click here.</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
 
-  <!-- MODAL 6 -->
-  <div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="project-6-label">Lucky draw ball game</h4>
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <h3>Project Description</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <p>This is a draw based game, where player gets the chance to pick random numbers from one to five per ticket. Also player plays five tickets per game. For every ticket player place bet in range between 1-1000$, when tickets are choosen player click on button PLAY and game start. The twelve numbers are drawing every two seconds, one by one. </p>
-              <h4 class="technologies">Tools used to create the project:</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>HTML</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>CSS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>JavaScript</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>ReactJS</li>
-                <li><i class="fa fa-check-square-o pr-10 text-colored"></i>Responsive Web Desing</li>
-                </ul>
-                <p>Click on the <a href="https://lucky-draw-ball.herokuapp.com/" target="_blank">image</a> to see the code of app on the Heroku.</p>
-              </div>
-              <div class="col-md-6">
-                <a href="https://lucky-draw-ball.herokuapp.com/" target="_blank"><img src="main-images/luckynew.png" alt="Todo list app"></a>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-    </div>
-  </div>
+			<!-- second row -->
+			<div class="row p-10">
+				<div class="col-md-6">
+					<div class="hovereffect">
+			      <img class="img-responsive rounded" src="img/susur.jpg" alt="Table in restaurant">
+			      <div class="overlay">
+			        <h3>Susur Chef Restaurant Group</h3>
+			        <a class="info" href="susur/home.html" target="_blank">Example about chef Susur Lee and his story. Click here.</a>
+			      </div>
+			    </div>
+				</div>
+				
+				<div class="col-md-6 pd-top">
+					<div class="hovereffect">
+				    <img class="img-responsive rounded" src="img/agency.jpeg" alt="Work desk">
+				    <div class="overlay">
+				      <h3>Intersection Advertising Agency</h3>
+				      <a class="info" href="agency/home.html" target="_blank">Example about an advertising agency. Click here.</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
 
-  <!-- HEADER -->
-  <header id="header" class="nav-down">
-      <nav id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-header nav-transition">
-        <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <img class="profile-image-circle"src="main-images/prof-img-circle.png">
-          <div class="header-text">
-          <p>Dragana Živković<br>
-          <span class="mail-font"><i class="fas fa-envelope"></i>draganaz994@gmail.com</span></p>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav na-tabs navbar-nav ml-auto" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-  </header>
+			<!-- third row -->
+			<div class="row p-10">
+				<div class="col-md-6">
+					<div class="hovereffect">
+			      <img class="img-responsive rounded" src="img/todo.jpeg" alt="To do list">
+			      <div class="overlay">
+			        <h3>TODO list app</h3>
+			        <a class="info" href="https://simple-crud-to-do.herokuapp.com/" target="_blank">Simple CRUD app in React. Click here.</a>
+			      </div>
+			    </div>
+				</div>
+				
+				<div class="col-md-6 pd-top">
+					<div class="hovereffect">
+				    <img class="img-responsive rounded" src="img/salto.jpg" alt="Salto beer">
+				    <div class="overlay">
+				      <h3>Pub Majmunac</h3>
+				      <a class="info" href="pub/home.html" target="_blank">Pub located in Sremska Mitrovica. Click here.</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-  <!-- BANNER -->
-  <div class="banner" id="home">
-      <div class=" container-fluid">
-        <div class="row">
-          <div class="thumbnail text-center">
-            <img src="main-images/back3.jpg" class="desk-banner-image">
-            <div class="caption">
-              <h1 class="display-4">Junior<br> <span class="blue">Front-End Developer</span></h1>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <!--ABOUT -->
-  <div id="about" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="title text-center">About</h1>
-          <p class="text-center paragraph-navigation">As a recent graduate, I am eager to build a long-term career in the ﬁeld of front end development. Below is a list of my current technical skills: </p>
-          <div class="tehnical-skills row">
-            <div class="col-sm">
-            <ul>
-              <li class="logo">
-                <img src="main-images/logos/html5.png" class="small-icons" title="HTML5"></li>
-              <li class="logo">
-                <img src="main-images/logos/css3.png" class="small-icons" title="CSS3"></li>
-              <li class="logo">
-                <img src="main-images/logos/js.png" class="small-icons" title="JavaScript"> </li>
-              <li class="logo">
-                <img src="main-images/logos/jquery.png" class="small-icons" title="jQuery"></li>
-            </ul>
-            </div>
-            <div class="col-sm">
-              <ul>
-              <li class="logo">
-                <img src="main-images/logos/bootstrap.png" class="small-icons" title="Bootstrap"></li>
-              <li class="logo">
-              <img src="main-images/logos/java.png" class="small-icons" title="Java"></li>
-              <li class="logo">
-                <img src="main-images/logos/mysql.png" class="small-icons" title="MySQL"></li>
-              </ul>
-            </div>
-
-            <div class="col-sm">
-              <ul>
-              <li class="logo">
-                <img src="main-images/logos/linux.svg" class="small-icons" title="Linux"></li>
-              <li class="logo">
-                <img src="main-images/logos/react.png" class="small-icons" title="React"></li>
-              <li class="logo">
-                <img src="main-images/logos/github.png" class="small-icons" title="GitHub"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- PORTFOLIO -->
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="title text-center">Portfolio</h1>
-      <p class="text-center paragraph-navigation">Click on the image title to see the project description.</p>
-      <!--first row-->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="portfolio-container row grid-space-20">
-            <!-- Modal1 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/homeSusur.png" alt="Susur" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-1">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block title-portfolio" data-toggle="modal" data-target="#project-1">Restaurant chef</a>
-                  </div>
-            </div>
-
-            <!-- Modal2 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/salto.jpg" alt="Pub example" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-2">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Pub</a>
-                  </div>
-            </div>
-
-            <!-- Modal3 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/agency.png" alt="Advertising Agency" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-3">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Advertising Agency</a>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--second row -->
-      <h5>React apps</h5>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="portfolio-container row grid-space-20">
-            <!-- Modal4 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/todo.png" alt="Todo list app" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-4">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Todo list app</a>
-                  </div>
-            </div>
-
-            <!-- Modal5 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/quotei.png" alt="Random quote example" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-5">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">Random quote</a>
-                  </div>
-            </div>
-
-            <!-- Modal6 -->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                  <div class="image-box">
-                    <div class="overlay-container">
-                      <img src="main-images/luckynew.png" alt="Lucky draw game" class="modal-img">
-                      <a class="overlay" data-toggle="modal" data-target="#project-6">
-                        <i class="fa fa-search-plus"></i>
-                      </a>
-                    </div>
-                    <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Lucky draw game</a>
-                  </div>
-            </div>
-            <!-- Modal end -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div id="contact" class="footer section">
-    <div class="container">
-      <h1 class="title text-center">Contact</h1>
-      <div class="space"></div>
-      <div class="row">
-        <ul class="social-links">
-           <li class=linkedin><a href="https://www.linkedin.com/in/dragana-živković-72807516a" target="_blank"><i class="fa fa-linkedin icon-size"></i></a></li>
-          <li class="github"><a href="https://github.com/gagily" target="_blank"><i class="fa fa-github icon-size"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<!-- btn back to tp -->
+	<div id="btnTop" class="smooth-scroll">
+	  <a href="#topSection" class="btn btn-outline-dark">
+	    <i class="fa fa-arrow-up"></i>
+	  </a>
+	</div>
+	
+	<!-- footer -->
+	<footer>
+		<h4>CONTACT</h4>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/profile.php?id=1061064065" target="_blank" class="social-icon"> <i class="fa fa-facebook trans p-rem"></i></a></li>
+      <li><a href="https://github.com/gagily" target="_blank" class="social-icon"> <i class="fa fa-github trans p-rem"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/dragana-živković-72807516a" target="_blank" class="social-icon"> <i class="fa fa-linkedin trans p-rem"></i></a></li>
+      <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=draganaz994@gmail.com&su=message from portfolio" target="_blank" class="social-icon"> <i class="fa fa-envelope trans p-rem"></i></a></li>
+    </ul>
+		<span>Gagily© 2019. Privacy policy</span>
+	</footer>
 
 
 
-  <!-- FOOTER -->
-  <footer class="text-center">
-    <span>Gagily&copy; 2019. Privacy policy</span>
-  </footer>
+
+<!-- js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

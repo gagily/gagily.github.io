@@ -1,274 +1,253 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-weight: 400;
-  line-height: 1.5;
-  position: relative;
-}
-.profile-image-circle {
-  border-radius: 50%;
-  width: 100px;
-  float: left;
-  border: 2px solid white;
+	font-family: "Ubuntu Mono";
+	background: url('img/1.png');
 }
 
-.opacity-header {
-  opacity: 0.9;
+header {
+	padding-bottom: 40px;
 }
 
-.navbar-dark .navbar-brand {
-  padding: 0;
+#btnTop {
+	position: relative;
+	text-align: right;
+	bottom: 30px;
+	right: 30px;
+	padding-top: 15px;
 }
 
-.nav-tabs {
-  border: none;
+
+.logo {
+	width: 100px;
 }
 
-.header-text {
-  font-size: 1rem;
-  padding-left: 110px;
-  padding-top: 20px;
-  color: gray;
+.bg-black {
+	background-color: black;
 }
 
-.banner {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  position: relative;
-  color: #fff;
+/* underline*/
+
+.nav-link:hover {
+	border-bottom: 1px solid lightblue;
 }
 
-.desk-banner-image {
-  width: 100%;
-  margin: 0;
+
+/* MAIN CONTENT*/
+.about, .projects {
+	margin-bottom: 30px;
 }
 
-.img-title{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.projects {
+	padding-bottom: 20px;
 }
 
-.active .nav-link{
-  color: #007acc !important;
+.p-10 {
+	padding-top: 10px;
 }
 
-.blue {
-  color: #007acc;
+h2 {
+	padding-top: 30px;
+	text-align: center;
 }
 
-.thumbnail {
-  position: relative;
-}
-
-h5 {
-  font-weight: 800 !important;
-  padding: 10px;
-  text-align: center;
-}
-
-.caption {
-  position: absolute;
-  top: 30%;
-  left: 0;
-  width: 100%;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.title {
-  font-weight: 700;
+.profile-img {
+	width: 100%;
 }
 
 .small-icons {
-  width: 80px;
-  height: 80px;
+	cursor: pointer;
+	width: 6rem;
+	filter: grayscale(100%); /* IE5+ */
+      -webkit-filter: grayscale(0); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: filter .2s ease-in-out;  
 }
 
-li {
-  list-style-type: none;
-  padding: 3px;
+.small-icons:hover {
+	 filter: none;
+      -webkit-filter: grayscale(1);
+      -webkit-transform: scale(1.01);
 }
 
-.modal-img {
+.skills-table {
+	width: 90%;
+	margin: auto;
+}
+
+.skills-desc {
+	padding-top: 20px;
+}
+
+.headlineP {
+	text-align: center;
+	padding: 30px 0;
+}
+
+/* projects hover */
+.img-responsive {
+	width: 100%;
+}
+
+.hovereffect {
   width: 100%;
-}
-
-
-.btn:hover {
-  background-color: #bfbfbf;
-}
-
-.paragraph-navigation {
-  padding: 20px;
-}
-
-.modal-header {
-    background-color: #93b2ca;
-    color: #ffffff;
-}
-
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
-  opacity: .2;
-}
-
-.modal-title {
-  margin: 0;
-  line-height: 1.42857143;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.text-colored {
-  color: #55acee;
-  padding-right: 3px;
-}
-
-.fas {
-  font: normal normal normal 14px/1 FontAwesome;
-  padding-right: 2px;
-}
-
-.mail-font {
-  font-size: 12px; 
-}
-
-.logo {
-  display: inline;
-  text-align: center;
-}
-
-.logo img {
-  display: block;
-  margin: auto;
-}
-
-.overlay-container:hover .overlay {
-  opacity: 1;
-  }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: -1px;
-  left: 0;
-  right: -1px;
-  cursor: pointer;
+  height: 100%;
+  float: left;
   overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h3 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-  transition: all linear 0.2s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
 }
 
-.overlay i {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 25px;
-  line-height: 1;
-  color: #ffffff;
-  margin-top: -8px;
-  margin-left: -8px;
-  text-align: center;
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
 }
 
-.icon-size {
-  font-size: 2.1rem !important;
-  color: black;
-  padding-right: 2px;
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h3 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
-.linkedin, .github {
-  display: inline-block;
+.black-bg {
+	background-color: darkgray;
+	height: 100px;
 }
 
-.space {
-  padding: 20px 0;
-}
-
-.social-links {
-  width: 100%;
-  padding-left: 0px;
-  text-align: center;
-}
-
-#header .navbar-nav li > a {
-  text-transform: capitalize;
-  
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-}
-
-#header .navbar-nav li.active > a {
-  color: #fff;
-}
 
 footer {
-  background-color: #343a40;
-  padding: 1rem;
+	background-color: black;
+	text-align: center;
+	color: rgba(255,255,255,.5);
 }
 
-footer span {
-  color: gray;
+h4 {
+	padding: 30px 0;
 }
 
-.nav-transition {
-  transition: 0.6s;
+.social-icon {
+    color: #fff;
 }
 
-ul {
-  padding-left: 0px;
+.social-icons li {
+    vertical-align: top;
+    display: inline;
 }
 
-.icon-size:hover {
-  color: #786b6b;
+.social-icons {
+	padding-left: 0px !important;
 }
 
-@media only screen and (max-width: 400px){
-  .display-4 {
-    font-size: 2rem !important;
-    padding-top: 60px;
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.p-rem {
+	padding:1rem 2rem;
+}
+
+.trans {
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-facebook, .fa-linkedin, .fa-github, .fa-envelope {   
+    background-color: #322f30;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+
+.fa-envelope:hover {
+    background-color: #de8f2d;
+}
+/* media query */
+
+@media only screen and (max-width: 425px) {
+  .small-icons {
+    width: 3.5rem;
   }
-
-  .header-text {
-    padding-left: 87px;
-  }
-
-  .profile-image-circle {
-    width: 80px;
-  }
 }
 
-@media only screen and (min-width: 1920px){
-  .thumbnail {
-    width: 100%;
-  }
-
-  .display-4 {
-    font-size: 5rem !important;
-  }
+@media only screen and (max-width: 767px) {
+  .pd-top {
+	padding-top: 10px;
+	}
 }

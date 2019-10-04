@@ -386,6 +386,13 @@ footer{
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 430px) {
+	.chefs-story {
+		font-size: 13px;
+	}
+
+}
+
 @media only screen and (max-width: 980px){
 	.burger{
 		display: block;

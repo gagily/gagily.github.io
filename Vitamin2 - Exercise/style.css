@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  background: #000;
+}
+
+.star-wars {
+  position: relative;
+  top: 25%;
+  justify-content: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 1000;
+  line-height: 150%;
+  perspective: 350px;
+}
+
+.angle {
+  width: 70%;
+  margin: auto;
+  letter-spacing: -10px;
+  text-align: center;
+  transform: rotateX(25deg)  translateZ(0);
+}
+
+.letter {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f3c84a;
+}
+
+@keyframes jump {
+  0% {transform: scale(1,.6) translateY(4px);}
+  10% {transform: scale(.8,.6) translateY(32px);}
+  30%  { transform: scale(1.1,.9)   translateY(0); }
+  50%  { transform: scale(.9,1.1)   translateY(-20px); }
+  57%  { transform: scale(1.05,.95) translateY(0); }
+  70%  { transform: scale(1,1)      translateY(-4px); }
+  82%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
+.animated {
+  animation-name: jump;
+  animation-duration: .6s;
+  animation-timing-function: cubic-bezier(0.8, 0.68, 0.83, 0.67);
+  animation-iteration-count: 1;
+}
+
+ 

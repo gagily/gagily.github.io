@@ -31,20 +31,18 @@ body {
 
 @keyframes jump {
   0% {transform: scale(1,.6) translateY(4px);}
-  10% {transform: scale(.8,.6) translateY(32px);}
+  10% {transform: scale(.8,.6) translateY(35px);}
   30%  { transform: scale(1.1,.9)   translateY(0); }
-  50%  { transform: scale(.9,1.1)   translateY(-20px); }
-  57%  { transform: scale(1.05,.95) translateY(0); }
-  70%  { transform: scale(1,1)      translateY(-4px); }
+  50%  { transform: scale(.9,1.1)   translateY(-30px); }
+  57%  { transform: scale(1.05,.95) translateY(-10px); }
   82%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
 }
 
 .animated {
   animation-name: jump;
-  animation-duration: .6s;
+  animation-duration: .55s;
   animation-timing-function: cubic-bezier(0.8, 0.68, 0.83, 0.67);
   animation-iteration-count: 1;
 }
-
  

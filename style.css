@@ -157,7 +157,7 @@ h2 {
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  padding: 1em 0;
+  padding: 1em 0.5rem;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -178,6 +178,13 @@ h2 {
 	height: 100px;
 }
 
+.info {
+  font-size: 18px;
+}
+
+.overlay p {
+  display: inline-block;
+}
 
 footer {
 	background-color: black;

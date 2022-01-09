@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Susur | Susur.com</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="susur.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- favicon -->
+	<link rel="icon" href="image/redLogo.png" type="image/gif" sizes="17x17">
+</head>
+<body>
+	<header>
+		<div class="wrap-header">
+		<div class="logo">
+			<a href="home.html"><img src="image/redLogo.png" class="logo-img"></a>
+		</div>
+
+		<nav>
+			<label for="toggle" class="burger">&#9776;</label>
+			<input type="checkbox" id="toggle">
+			<ul class="menu">
+				<li><a href="home.html" class="red">Home</a></li>
+				<li><a href="chefs.html">Chef's Story</a></li>
+				<li class="dropdown"><a href="restaurant.html" class="dropbtn">Restaurants<img src="image/angle-arrow-down.svg" class="arrow-nav"></a>
+					<div class="dropdown-content">
+						<a href="https://kidleefood.com/" class="drop-content-first" target="_blank">Kid Lee</a>
+						<a href="https://www.leerestaurant.com/" target="_blank">Lee</a>
+						<a href="http://luckeerestaurant.com/" target="_blank">Lucke</a>
+						<a href="https://www.torontopearson.com/Components/Templates/Retailer.aspx?RetailerID=3255##" target="_blank">Lee Kitchen</a>
+						<a href="http://www.tunglokheen.com/" target="_blank">TungLok Heen</a>
+					</div></li>
+				<li class="dropdown"><a href="#" class="dropbtn">Private Events<img src="image/angle-arrow-down.svg" class="arrow-nav"></a>
+					<div class="dropdown-content">
+						<a href="dining.html" class="drop-content-first">Private Dining</a>
+						<a href="catering.html">Catering</a>
+					</div></li>
+				<li><a href="gifts.html">Signature Gifts</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<main>	
+
+		<!--FIRST PART-->
+		<!--SLIDER-->
+		<div class="slide">
+			<!--MAIN SLIDE-->
+			<div class="slide-img img-main">
+				<div class="midlle-logo">
+					<img src="image/slideLogo.png" class="logo-slide">
+				</div>
+			</div>
+
+			<!--SECOND SLIDE-->
+			<div class="slide-img img-second">
+				<div class="desc-chefs">
+					<span class="chefs-story">"My ambition as a Chef is to create<br>
+							an experience that immerses you;<br>
+							my restaurants are sensory theatres.<br>
+							<br>
+							The dishes I create are a fusion of my<br>
+							culinary past and present,at once <br>
+							novel and familiar.<br>
+							<br>
+							In my recepies you taste the story <br>
+							of my life, and what inspires me.<br>
+							my travels, my heritage, my family."
+						</span>
+						<button class="chefs-btn">Chefs story</button>
+				</div>
+			</div>
+
+			<!--THIRD SLIDE-->
+			<div class="slide-img img-third">
+					
+			</div>
+
+			<!--FOURTH SLIDE-->
+			<div class="slide-img img-fourth">
+				<div class="desc-chefs">
+					<span class="chefs-story">"My ambition as a Chef is to create<br>
+						an experience that immerses you;<br>
+						my restaurants are sensory theatres.<br>
+						<br>
+						The dishes I create are a fusion of my<br>
+						culinary past and present,at once <br>
+						novel and familiar.<br>
+						<br>
+						In my recepies you taste the story <br>
+						of my life, and what inspires me.<br>
+						my travels, my heritage, my family."
+					</span>
+					<button class="chefs-btn">Chefs story</button>
+				</div>
+			</div>
+		</div>
+
+		<!--JS SLIDE-->
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("slide-img");
+			  for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 3000); // Change image every 8 seconds
+			}
+		</script>
+
+
+
+		<!--SECOND PART-->
+
+		<div class="wrap-imgs">
+			<!--FIRST ROW-->
+			<div class="wrap-row">
+				<div class="row">
+					<a href="chefs.html">
+						<img src="image/chefEye.jpg" class="row-img">
+					</a>
+
+				</div>
+
+				<div class="row">
+					<a href="restaurant.html"><img src="image/leeRest.jpg" class="row-img"></a>
+				</div>
+
+				<div class="row">
+					<a href="dining.html"><img src="image/tableGlass.jpg" class="row-img"></a>
+				</div>
+			</div>
+
+			<!--SECOND ROW-->
+			<div class="wrap-row">
+				<div class="row">
+					<a href="news.html"><img src="image/Luckee.jpg" class="row-img" ></a>
+				</div>
+
+				<div class="row">
+					<a href="gifts.html"><img src="image/signaturegifts-home.jpg" class="row-img"></a>
+				</div>
+
+				<div class="row">
+					<a href="contact.html"><img src="image/contact-homegrid.jpg" class="row-img"></a>
+				</div>
+			</div>
+
+			<!--DIVIDER-->
+			<div class="divider">			
+			</div>
+		</div>
+
+
+		<!--THIRD PART-->
+
+		<div class="cover">
+			<div class="container-cover">
+				<div class="signature">
+					<img src="image/susur-signature.png" class="signature-img">
+				</div>
+				<div class="portret">
+					<img src="image/susur-cutoutshadow-1.png" class="portret-img">
+				</div>
+			</div>
+		</div>
+
+
+		<!--FOURTH PART-->
+		<div class="container-mailing">
+			<div class="logo-mailing">
+				<img src="image/redLogo.png">
+			</div>
+			<div class="text-mailing">
+				<center>
+					<form>
+						<h4 class="fontsans">Join Our Mailing List!</h4>
+						<br>
+						<p class="fontsans centering gray-font" >Be among the first to receive the latest news on our upcoming events, special offers, and all things Susur! Once submitted, please check your email (including junk if you haven't received mail from us in the past) to verify your address.</p>
+
+						<label class="fontsans gray-font">Email*</label>
+						<input type="text" name="email" placeholder="hello@email.com">
+						<label class="fontsans gray-font">Name</label>
+						<input type="text" name="fullname" placeholder="Full Name">
+						<button>SUBMIT</button>
+					</form>
+				</center>
+			</div>
+		</div>
+
+
+		<!--FIFTH PART-->
+		<div class="red-back">
+			<div class="last-container">
+				<div class="location">
+					<div class="white-logo">
+						<img src="image/slideLogo.png">
+					</div>
+					<p class="white-font">– SUSUR LEE RESTAURANT GROUP –</p>
+					<p class="white-font">603 KING ST W<br> TORONTO, ONTARIO</p>
+					<p class="white-font">INFO@SUSUR.COM</p>
+				</div>
+			</div>
+			<div class="networks">
+					<div class="network-col">
+						<p class="white-font font14">LEE</p>
+						<ul class="ul-net">
+							<li><a href="https://www.instagram.com/lee_restaurant/" target="_blank"><img src="image/instagram.svg" class="net-img" ></a></li>
+							<li><a href="https://www.facebook.com/leerestaurantandlounge/" target="_blank"><img src="image/facebook.svg" class="net-img"></a></li>
+							<li><a href="https://twitter.com/leerestaurant?lang=en" target="_blank"><img src="image/twitter.svg" class="net-img" ></a></li>
+						</ul>
+					</div>
+					<div class="network-col">
+						<p class="white-font font14">KID LEE</p>
+						<ul class="net-middle">
+							<li><a href="https://www.instagram.com/kidleefood/" target="_blank"><img src="image/instagram.svg" class="net-img" ></a></li>
+						</ul>
+					</div>
+					<div class="network-col">
+						<p class="white-font font14">LUCKEE</p>
+						<ul>
+							<li><a href="https://www.instagram.com/luckeeto/?hl=en" target="_blank"><img src="image/instagram.svg" class="net-img" ></a></li>
+							<li><a href="https://www.facebook.com/LuckeeToronto/" target="_blank"><img src="image/facebook.svg" class="net-img" ></a></li>
+							<li><a href="https://twitter.com/LuckeeTO" target="_blank"><img src="image/twitter.svg" class="net-img" ></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</main>
+
+	<footer>
+		<span class="footer">Gagily© 2019.Privacy Policy </span>
+	</footer>
+
+</body>
+</html>
